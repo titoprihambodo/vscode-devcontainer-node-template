@@ -1,5 +1,4 @@
 # DevContainer Configuration Template for VSCode
----
 
 ### Containers configuration:
 - app -> your devcontainer environment
