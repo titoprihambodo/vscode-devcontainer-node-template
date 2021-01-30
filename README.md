@@ -1,8 +1,7 @@
-###DevContainer Configuration Template for VSCode
-------
+# DevContainer Configuration Template for VSCode
+---
 
-
-####Containers configuration:
+### Containers configuration:
 - app -> your devcontainer environment
   - alpin or debian image container
   - user non-root
@@ -11,17 +10,17 @@
 - mongodb
   - custom config, mongod.conf
   - external log file, mongo.log
-  - persistence data with volumes
+  - persistent data with volumes
 - redis
   - custom redis.conf
-  - persistence data volume
+  - persistent data volume
 - prometheus
   - custom config prometheus.yml
-  - persistence data volume
+  - persistent data volume
 - cadvisor
   - resources consumption of the containers
 
-####Directories:
+### Directories:
 ```
 .devcontainer/
   config/                   -> mongodb, redis, prometheus configs
@@ -37,7 +36,7 @@ src/
 package.json
 README.md
 ```
-<br/><br/>
+<br/>
 
-#####Note:
-> You can share ssh key from the host to the devcontainer with ssh-add or ssh-agent (https://code.visualstudio.com/docs/remote/containers#_sharing-git-credentials-with-your-container)
+#### Note:
+> You can share ssh key from the host to devcontainer with ssh-add or ssh-agent (https://code.visualstudio.com/docs/remote/containers#_sharing-git-credentials-with-your-container)
